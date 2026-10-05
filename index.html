@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triển Lãm Thiện Nguyện</title>
+    
+    <!-- Phần CSS dùng để trang trí (lớp sơn của ngôi nhà) -->
+    <style>
+        /* Cài đặt cơ bản cho toàn bộ trang */
+        body {
+            font-family: Arial, sans-serif; /* Phông chữ dễ đọc */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Màu nền xám nhạt */
+            color: #333; /* Màu chữ xám đậm */
+            text-align: center; /* Căn giữa nội dung */
+        }
+
+        /* Trang trí cho Tiêu đề chính */
+        header {
+            background-color: #4CAF50; /* Màu nền xanh lá */
+            color: white; /* Chữ màu trắng */
+            padding: 20px;
+        }
+
+        /* Trang trí cho đoạn giới thiệu */
+        .gioi-thieu {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5; /* Khoảng cách giữa các dòng */
+        }
+
+        /* Tạo bố cục lưới (Grid) cho các bức ảnh */
+        .khu-vuc-anh {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Chia màn hình làm 2 cột đều nhau */
+            gap: 10px; /* Khoảng cách giữa các ảnh là 10px */
+            padding: 15px;
+        }
+
+        /* Trang trí cho từng bức ảnh */
+        .anh-thien-nguyen {
+            width: 100%; /* Ảnh sẽ tự thu phóng vừa với cột */
+            border-radius: 8px; /* Bo tròn 4 góc của ảnh */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tạo bóng mờ cho ảnh nổi lên */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Phần HTML tạo khung nội dung (bộ khung ngôi nhà) -->
+
+    <header>
+        <h1>Triển Lãm Số: Yêu Thương</h1>
+    </header>
+
+    <div class="gioi-thieu">
+        <p>Chào mừng bạn đến với không gian lưu giữ những khoảnh khắc đẹp của nhóm thiện nguyện chúng tôi. Mỗi bức ảnh là một nụ cười được trao đi.</p>
+    </div>
+
+    <!-- Nơi chứa các hình ảnh -->
+    <div class="khu-vuc-anh">
+        <!-- Chú ý thuộc tính src="..." chính là đường dẫn của bức ảnh -->
+        <img class="anh-thien-nguyen" src="https://via.placeholder.com/300x300/FFB6C1/000000?text=Anh+1" alt="Hoạt động phát quà">
+        <img class="anh-thien-nguyen" src="https://via.placeholder.com/300x300/ADD8E6/000000?text=Anh+2" alt="Hoạt động xây nhà">
+        <img class="anh-thien-nguyen" src="https://via.placeholder.com/300x300/90EE90/000000?text=Anh+3" alt="Nụ cười trẻ em">
+        <img class="anh-thien-nguyen" src="https://via.placeholder.com/300x300/FFD700/000000?text=Anh+4" alt="Đội ngũ tình nguyện viên">
+    </div>
+
+</body>
+</html>
